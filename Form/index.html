@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="nl-be" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Femke" />
+    <meta name="description" content="HTMLform" />
+    <meta name="keywords" content="form, HTML" />
+    <title>Form</title>
+</head>
+<body>
+    <h1><u>Persoonlijke info</u></h1>
+
+    <form name="TestForm" autocomplete="on">
+        <label for="FirstName">Voornaam</label><br />
+        <input type="text" id="FirstName" required /><br />
+
+        <br /><label for="LastName">Achternaam</label><br />
+        <input type="text" id="LastName" required /><br />
+
+        <br /><label for="Email">Email</label><br />
+        <input type="email" id="Email" required /><br />
+
+        <br /><label for="Phone">Gsm-nummer</label><br />
+        <input type="tel" id="Phone" required /><br />
+
+        <br /><label for="Geboortedatum">Geboortedatum</label><br />
+        <input type="date" id="Geboortedatum" required /><br />
+
+        <br /><p>Vorm</p>
+        <input type="radio" id="TSO" name="Vorm">
+        <label for="ASO">ASO</label><br>
+        <input type="radio" id="TSO" name="Vorm">
+        <label for="TSO">TSO</label><br>
+
+        <br /><label for="Year">Jaar</label><br />
+        <select id="Year" required>
+            <option>1ste jaar</option>
+            <option>2de jaar</option>
+            <option>3de jaar</option>
+            <option>4de jaar</option>
+            <option>5de jaar</option>
+            <option>6de jaar</option>
+        </select>
+
+        <h2><u>Optionele vragen</u></h2>
+
+        <label for="Color">Favoriete kleur</label><br />
+        <input type="color" id="Color" /><br />
+
+        <br /><label for="Number">Favoriete getal (1-100)</label><br />
+        <input type="number" id="Number" min="1" max="100" /><br />
+
+        <br /><label for="Song">Favoriete Liedje (link)</label><br />
+        <input type="url" id="Song" /><br />
+
+        <br /><label for="Photo">Favoriete foto (bestand)</label><br />
+        <input type="file" id="Photo" /><br />
+
+        <br /><<input type="submit"/>
+        <input type="reset"/>
+    </form>
+</body>
+</html>
